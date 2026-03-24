@@ -1451,6 +1451,7 @@ document.addEventListener("DOMContentLoaded", () => {
     shouldSort: false,
     searchResultLimit: 10,
     placeholderValue: "Select dependencies...",
+    duplicateItemsAllowed: false,
   });
 
   peopleChoices = new Choices("#taskPeople", {
@@ -1458,6 +1459,7 @@ document.addEventListener("DOMContentLoaded", () => {
     shouldSort: false,
     searchResultLimit: 10,
     placeholderValue: "Assign people...",
+    duplicateItemsAllowed: false,
   });
 
   categoryFilterChoices = new Choices("#categoryFilter", {
@@ -1465,6 +1467,7 @@ document.addEventListener("DOMContentLoaded", () => {
     shouldSort: false,
     placeholderValue: "Filter by category...",
     searchResultLimit: 10,
+    duplicateItemsAllowed: false,
   });
 
   // Add event listener to re-render the chart when the category selection changes
